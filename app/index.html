@@ -4,20 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>CULT-HTML</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="top">
+      <img class="top-decor-img top-decor-img1" src="images/top-decor-img1.svg" alt="">
+      <img class="top-decor-img top-decor-img2" src="images/top-decor-img2.png" alt="">
+      <img class="top-decor-img top-decor-img3" src="images/img3.svg" alt=""/>
+      <img class="top-decor-img top-decor-img4" src="images/top-decor-img4.svg" alt="">
+      <img class="top-decor-img top-decor-img5" src="images/top-decor-img5.svg" alt="">
+      <img class="top-decor-img top-decor-img6" src="images/top-decor-img6.svg" alt="">
+
       <header class="header">
         <div class="container">
           <div class="header-top"> 
             <div class="header-top__left">
-              <img src="images/logo.svg" alt="">
+              <a class="logo" href="#">
+                <img src="images/logo.svg" alt="">
+              </a>
               <nav class="header-top__nav">
                 <ul class="header-top__nav-list">
-                  <li class="header-top__nav-item"><a href="#">Холдинг</a></li>
+                  <li class="header-top__nav-item"><a class="link-active" href="#">Холдинг</a></li>
                   <li class="header-top__nav-item"><a href="#">Nordcore</a></li>
                   <li class="header-top__nav-item"><a href="#">Swift Technical</a></li>
                 </ul>
@@ -27,7 +39,7 @@
               <div class="header-top__lang">
                 <div class="header-top__lang-head">
                   <img src="images/russ-icon.svg" alt="">
-                  ru
+                  <span>ru</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="9" height="22" viewBox="0 0 9 22" fill="none">
                     <path opacity="0.8" d="M1.1084 12.043L4.49973 15.043L7.89106 12.043" stroke="#145CEF" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -101,18 +113,480 @@
       </header>
 
       <div class="header-content">
-        <h1 class="header-content__title">
-          <div class="header-content__title-top"><span>//</span> Комплексные</div>
-          <div class="header-content__title-bot"><span>кадровые</span><span>решения</span></div>
-        </h1>
-        <p class="header-conetnt__text">
-          Консалтинговая компания Nordcore & Swift Technical занимается подбором и предоставлением высококвалифицированного персонала для крупнейших российских и международных компаний.
-        </p>
+        <div class="container">
+          <div class="header-content__inner">
+            <h1 class="header-content__title">
+              <div class="header-content__title-top"><span>//</span> Комплексные</div>
+              <div class="header-content__title-bot"><span>кадровые</span><span>решения</span></div>
+            </h1>
+            <p class="header-content__text">
+              Консалтинговая компания Nordcore & Swift Technical занимается подбором и предоставлением высококвалифицированного персонала для крупнейших российских и международных компаний.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-benefits">
+        <div class="container">
+          <div class="header-benefits__inner">
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>2</span>
+                офиса
+              </div>
+              <div class="header-benefits__value">В Москве и Южно-Сахалинске</div>
+            </div>
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>25</span>
+                лет
+              </div>
+              <div class="header-benefits__value">Помогаем компаниям</div>
+            </div>
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>2</span>
+                офиса
+              </div>
+              <div class="header-benefits__value">В Москве и Южно-Сахалинске</div>
+            </div>
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>25</span>
+                лет
+              </div>
+              <div class="header-benefits__value">Помогаем компаниям</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-cards">
+        <div class="container">
+          <div class="top-cards__inner">
+            <div class="top-cards__item">
+              <div class="top-cards__item--bg"></div>
+              <a class="top-cards__item-inner" href="#">
+                <div class="top-cards__item-top">
+                  <div class="top-cards__item-text-box">
+                    <div class="top-cards__item-title">Swift Technical</div>
+                    <p class="top-cards__item-text">
+                      Подбор, временный персонал, технико-консультационные услуги
+                    </p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="top-cards__words">
+                  <div class="top-cards__words-row">
+                    <div class="top-cards__words-item">Подбор персонала</div>
+                    <div class="top-cards__words-item top-cards__words-item--slash">//</div>
+                    <div class="top-cards__words-item">Временный персонал</div>
+                  </div>
+                  <div class="top-cards__words-row">
+                    <div class="top-cards__words-item">Консультационные услуги</div>
+                    <div class="top-cards__words-item top-cards__words-item--slash">//</div>
+                    <div class="top-cards__words-item">Еще одна услуга</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="top-cards__item">
+              <div class="top-cards__item--bg"></div>
+              <a class="top-cards__item-inner" href="#">
+                <div class="top-cards__item-top">
+                  <div class="top-cards__item-text-box">
+                    <div class="top-cards__item-title">Nordcore</div>
+                    <p class="top-cards__item-text">
+                      Карьерное консультирование B2C и корпоративное обучение B2B
+                    </p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="top-cards__words">
+                  <div class="top-cards__words-row">
+                    <div class="top-cards__words-item">Обучение и оценка</div>
+                    <div class="top-cards__words-item top-cards__words-item--slash">//</div>
+                  </div>
+                  <div class="top-cards__words-row">
+                    <div class="top-cards__words-item top-cards__words-item--slash">//</div>
+                    <div class="top-cards__words-item">Консультационные услуги</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-content">
+        <div class="container">
+          <div class="top-content__inner">
+            <div class="top-content__textbox">
+              <h2 class="top-content__title">
+                <div class="top-content__title-top">
+                  <span>//</span>
+                  Формируем команды,
+                </div>
+                <div class="top-content__title-bot">
+                  <span>подбираем</span>
+                  <span>специалистов</span>
+                </div>
+              </h2>
+              <p class="top-content__text">
+                Собираем эффективные команды и помогаем ими управлять. <br>В любых формах занятости, для решения любых задач.
+              </p>
+            </div>
+            <a class="top-content__link" href="#">
+              Подробнее о холдинге
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                <path d="M1.66993 0.475239C1.15383 0.588903 0.693026 0.954473 0.444193 1.44599C0.235296 1.86686 0.244512 1.52279 0.253728 7.05549L0.262944 12.0567L0.330528 12.2564C0.533281 12.8493 1.00023 13.3101 1.58391 13.4944L1.79895 13.562H5.50073H9.2025L9.44826 13.4791C10.0442 13.2763 10.4313 12.8923 10.674 12.2564C10.7385 12.0874 10.7385 12.069 10.7477 8.50855C10.7539 5.90656 10.7477 4.8805 10.7231 4.74534C10.6801 4.53337 10.5542 4.24153 10.4159 4.03877C10.3299 3.91282 7.59584 1.09271 7.36237 0.88996C7.19033 0.739431 6.963 0.61348 6.71417 0.527463L6.46841 0.444518L4.1644 0.438375C2.30583 0.435303 1.82353 0.441446 1.66993 0.475239ZM5.66047 5.80518C5.80178 5.84512 5.98303 6.04173 6.01068 6.18918C6.05369 6.41651 5.97996 6.6039 5.79564 6.73907C5.71577 6.80051 5.66661 6.80358 4.58527 6.8128C3.96472 6.81894 3.41176 6.8128 3.35646 6.80358C3.21515 6.77901 3.02776 6.58547 2.98475 6.42573C2.91716 6.18304 3.03697 5.94035 3.27044 5.83283C3.38411 5.7806 3.49163 5.77446 4.4716 5.77446C5.10444 5.77446 5.59289 5.78675 5.66047 5.80518ZM7.73715 8.52084C8.18566 8.75738 8.10579 9.38407 7.61427 9.4916C7.49753 9.51617 6.8647 9.52232 5.40857 9.51617C3.4732 9.50696 3.35953 9.50388 3.24894 9.44859C2.89873 9.27655 2.86801 8.7666 3.19672 8.54849L3.29809 8.47783H5.47615C7.29171 8.47783 7.66649 8.48397 7.73715 8.52084Z" fill="#FCFCFC"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-benefits header-benefits--one">
+        <div class="container">
+          <div class="header-benefits__inner">
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>78</span>
+                %
+              </div>
+              <div class="header-benefits__value">Высокий процент закрытия вакансий</div>
+            </div>
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>20-40</span>
+                дней
+              </div>
+              <div class="header-benefits__value">Средний срок закрытия вакансий</div>
+            </div>
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>10 000</span>
+              </div>
+              <div class="header-benefits__value">Сотрудников подобрализа 25 лет</div>
+            </div>
+            <div class="header-benefits__item">
+              <div class="header-benefits__prop">
+                <span>300 000</span>
+              </div>
+              <div class="header-benefits__value">Специалистов в собственной базе</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <main class="main">
 
-    </main>
+    <section class="services services-one">
+      <div class="container">
+        <h2 class="services__title">Услуги Nordcore</h2>
+        <div class="services__inner">
+          <div class="services__item">
+            <div class="services__item--bg"><img src="images/serv-bg1.jpg" alt=""></div>
+            <div class="services__item-inner">
+              <div class="services__item-textbox">
+                <div class="services__item-title">Консультации</div>
+                <p class="services__item-text">
+                  Это обучающая платформа, которая собрала в себе полную коллекцию лучших курсов по карьерному консультированию, эйчар и повышению квалификации.
+                </p>
+              </div>
+              <div class="services__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item--bg"><img src="images/serv-bg2.jpg" alt="">
+            </div>
+            <div class="services__item-inner">
+              <div class="services__item-textbox">
+                <div class="services__item-title">Обучение и оценка</div>
+                <p class="services__item-text">
+                  Это обучающая платформа, которая собрала в себе полную коллекцию лучших курсов по карьерному консультированию, эйчар и повышению квалификации.
+                </p>
+              </div>
+              <div class="services__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="services__link" href="#">Показать все услуги</a>
+      </div>
+    </section>
+
+    <section class="services services-two">
+      <div class="container">
+        <h2 class="services__title">Услуги Swift Technical</h2>
+        <div class="services__inner">
+          <div class="services__item">
+            <div class="services__item--bg"><img src="images/serv-bg3.jpg" alt=""></div>
+            <div class="services__item-inner">
+              <div class="services__item-textbox">
+                <div class="services__item-title">Консультации</div>
+                <p class="services__item-text">
+                  Это обучающая платформа, которая собрала в себе полную коллекцию лучших курсов по карьерному консультированию, эйчар и повышению квалификации.
+                </p>
+              </div>
+              <div class="services__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item--bg"><img src="images/serv-bg4.jpg" alt=""></div>
+            <div class="services__item-inner">
+              <div class="services__item-textbox">
+                <div class="services__item-title">Консультации</div>
+                <p class="services__item-text">
+                  Это обучающая платформа, которая собрала в себе полную коллекцию лучших курсов по карьерному консультированию, эйчар и повышению квалификации.
+                </p>
+              </div>
+              <div class="services__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item--bg"><img src="images/serv-bg5.jpg" alt=""></div>
+            <div class="services__item-inner">
+              <div class="services__item-textbox">
+                <div class="services__item-title">Консультации</div>
+                <p class="services__item-text">
+                  Это обучающая платформа, которая собрала в себе полную коллекцию лучших курсов по карьерному консультированию, эйчар и повышению квалификации.
+                </p>
+              </div>
+              <div class="services__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item--bg"><img src="images/serv-bg6.jpg" alt=""></div>
+            <div class="services__item-inner">
+              <div class="services__item-textbox">
+                <div class="services__item-title">Консультации</div>
+                <p class="services__item-text">
+                  Это обучающая платформа, которая собрала в себе полную коллекцию лучших курсов по карьерному консультированию, эйчар и повышению квалификации.
+                </p>
+              </div>
+              <div class="services__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#145CEF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__link">Показать все услуги</div>
+      </div>
+    </section>
+
+    <section class="cases">
+      <img class="cases--decor" src="images/cases-decor.svg" alt="">
+      <div class="container">
+        <h2 class="cases__title">Кейсы</h2>
+        <div class="cases__items">
+          <a class="cases__item" href="#">
+            <div class="cases__item--type">Schneider Electric</div>
+            <div class="cases__item-img">
+              <img src="images/cases-item-img.jpg" alt="">
+            </div>
+            <div class="cases__item-content">
+              <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+            </div>
+          </a>
+          <a class="cases__item" href="#">
+            <div class="cases__item--type">Schneider Electric</div>
+            <div class="cases__item-img">
+              <img src="images/cases-item-img.jpg" alt="">
+            </div>
+            <div class="cases__item-content">
+              <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+            </div>
+          </a>
+          <a class="cases__item" href="#">
+            <div class="cases__item--type">Schneider Electric</div>
+            <div class="cases__item-img">
+              <img src="images/cases-item-img.jpg" alt="">
+            </div>
+            <div class="cases__item-content">
+              <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+            </div>
+          </a>
+        </div>
+        <a class="cases__link" href="#">Показать все кейсы</a>
+      </div>
+    </section>
+
+    <section class="media">
+      <img class="media--decor1" src="" alt="">
+      <img class="media--decor1" src="" alt="">
+      <div class="container">
+        <div class="media__title">Медиа</div>
+        <div class="media__tabs">
+          <button class="media__tabs-btn media__tabs-btn--active">Последние материалы</button>
+          <button class="media__tabs-btn">Статьи</button>
+          <button class="media__tabs-btn">Гайды</button>
+          <button class="media__tabs-btn">Новости</button>
+        </div>
+        <div class="media__tabs-contents">
+          <div class="media__tabs-content media__tabs-content--active">
+            <div class="media__items">
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/cases-item-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/cases-item-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/cases-item-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+                  </div>
+                </a>
+            </div>
+            <a class="media__link" href="#">Показать все материалы</a>
+          </div>
+          <div class="media__tabs-content">
+            <div class="media__items">
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/test-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Hello everyone, Have a good day!!!</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/test-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Hello everyone, Have a good day!!!</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/test-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Hello everyone, Have a good day!!!</p>
+                  </div>
+                </a>
+            </div>
+            <a class="media__link" href="#">Показать все материалы</a>
+          </div>
+          <div class="media__tabs-content">
+            <div class="media__items">
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/cases-item-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/cases-item-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/cases-item-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Подобрали 400 специалистов в сфере промышленной автоматизации за месяц</p>
+                  </div>
+                </a>
+            </div>
+            <a class="media__link" href="#">Показать все материалы</a>
+          </div>
+          <div class="media__tabs-content">
+            <div class="media__items">
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/test-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Hello everyone, Have a good day!!!</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/test-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Hello everyone, Have a good day!!!</p>
+                  </div>
+                </a>
+                <a class="cases__item" href="#">
+                  <div class="cases__item--type">Schneider Electric</div>
+                  <div class="cases__item-img">
+                    <img src="images/test-img.jpg" alt="">
+                  </div>
+                  <div class="cases__item-content">
+                    <p>Hello everyone, Have a good day!!!</p>
+                  </div>
+                </a>
+            </div>
+            <a class="media__link" href="#">Показать все материалы</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    
+    
     <footer class="footer">
 
     </footer>
