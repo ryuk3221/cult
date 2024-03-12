@@ -13,3 +13,21 @@ mediaTabs.forEach(btn => {
     });
   };
 });
+
+const mainSlider = new Swiper('.personal__main-slider', {
+  slidesPerView: 3,
+  spaceBetween: 8,
+  navigation: {
+    prevEl: '.personal__main-slider-prev',
+    nextEl: '.personal__main-slider-next'
+  }
+});
+
+const slider = new Swiper('.personal__slider', {
+  slidesPerView: 4,
+  spaceBetween: 8,
+  navigation: {
+    prevEl: '.personal__slider-prev',
+    nextEl: '.personal__slider-next'
+  }
+});
